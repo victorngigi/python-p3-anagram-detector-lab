@@ -3,4 +3,8 @@
 from anagram import Anagram
 
 if __name__ == '__main__':
-    import ipdb; ipdb.set_trace()
+    a = Anagram("listen")
+    results = a.match(["enlist", "silent", "hello", "world"])
+    print("Anagrams of 'listen':", results)
+    import ipdb
+    ipdb.set_trace()
